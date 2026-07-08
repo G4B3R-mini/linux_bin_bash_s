@@ -1,0 +1,7 @@
+#!/bin/bash
+if [ "$1" = "clear" ]; then
+  sync; echo 3 | sudo tee /proc/sys/vm/drop_caches
+  echo "secesso"
+fi
+echo "ok"
+exec

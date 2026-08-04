@@ -1,0 +1,1 @@
+pip install --user $1 $2 $3 --break-system-packages

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+export NEWT_COLORS='
+root=white,black
+window=white,black
+border=green,black
+title=green,black
+button=black,green
+actbutton=white,red
+checkbox=white,black
+actcheckbox=yellow,red
+'
+
+npm --prefix /home/server/Público/video-ytb/ run download -- --dir "/home/server/Downloads/" $1
+
+
+if  whiptail  --title "Example Dialog" --yesno "video tem dublagem" 8 78 ; then
+ echo "User selected 
+Yes, exit status was $? " 
+npm --prefix /home/server/Público/video-ytb/ run dublagem --  --dir "/home/server/Downloads/" $1
+fi

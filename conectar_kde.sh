@@ -6,6 +6,7 @@ echo
 echo "Dispositivos disponíveis:"
 kdeconnect-cli -a
 
+kdeconnect-cli --list-available
 echo
 read -p "Digite o ID do dispositivo: " ID
 

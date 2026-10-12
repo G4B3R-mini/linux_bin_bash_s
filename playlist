@@ -1,6 +1,6 @@
 #!/bin/bash
-source "/mnt/ssd_nvme/play_list_videos/.venv/bin/activate"
-python3 "/mnt/ssd_nvme/play_list_videos/server.py"
+source "/mnt/46d6d246-1a5f-4388-b273-2ace8e54f409/play_list_videos/.venv/bin/activate"
+python3 "/mnt/46d6d246-1a5f-4388-b273-2ace8e54f409/play_list_videos/server.py"
 exec $SHELL
 
 
